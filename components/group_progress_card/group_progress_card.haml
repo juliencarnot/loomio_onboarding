@@ -13,7 +13,7 @@
     .group-progress-card__celebration-message{ng-if: "setupComplete()"}
       %span> 🎉
       %strong{translate: "loomio_onboarding.group_progress_card.celebration_message"}>
-      %a.lmo-pointer{ng-click: "$close()", translate: "loomio_onboarding.group_progress_card.dismiss_this_card"}
+      %a.lmo-pointer.group-progress-card__dismiss{ng-click: "$close()", translate: "loomio_onboarding.group_progress_card.dismiss_this_card"}
 
     %a.lmo-pointer.group-progress-card__learn-more{ng-href: "https://loomio.school", title: "{{ 'loomio_onboarding.group_progress_card.learn_more_title' | translate }}"}
       %span{translate: "loomio_onboarding.group_progress_card.learn_more"}>
