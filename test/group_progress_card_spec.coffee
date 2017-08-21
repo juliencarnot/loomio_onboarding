@@ -19,7 +19,7 @@ describe 'Group progress card', ->
     page.loadPath 'setup_progress_card_coordinator'
     page.clickLast '.group-progress-card__list-item'
     page.click '.poll-common-choose-type__poll-type--proposal'
-    page.fillIn '.poll-proposal-form__title', 'New proposal'
+    page.fillIn '.poll-common-form-fields__title', 'New proposal'
     page.click '.poll-common-form__submit'
     page.click '.group-theme__name--compact a'
     page.expectText '.group-progress-card', "Nice! Your group is good to go!"
