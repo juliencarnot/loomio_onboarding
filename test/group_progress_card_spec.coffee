@@ -1,7 +1,6 @@
 describe 'Group progress card', ->
 
   page = require '../../../angular/test/protractor/helpers/page_helper.coffee'
-  staticPage = require '../../../angular/test/protractor/helpers/static_page_helper.coffee'
 
   it 'is only visible to group coordinators', ->
     page.loadPath 'setup_progress_card_coordinator'
