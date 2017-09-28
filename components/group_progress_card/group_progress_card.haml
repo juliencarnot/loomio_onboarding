@@ -6,8 +6,8 @@
 
     %ul.group-progress-card__list
       %li.group-progress-card__list-item{ng-click: "activity.click()", ng-repeat: "activity in activities", ng-class: "{'group-progress-card__complete': activity.complete()}"}
-        %i.material-icons{ng-if: "activity.complete()"}> check_box
-        %i.material-icons{ng-if: "!activity.complete()"}> check_box_outline_blank
+        %i.mdi.mdi-checkbox-marked-outline{ng-if: "activity.complete()"}>
+        %i.mdi.mdi-checkbox-blank-outline{ng-if: "!activity.complete()"}>
         %span.group-progress-card__activity-text {{ translationFor(activity.translate) }}
 
     .group-progress-card__celebration-message{ng-if: "setupComplete()"}
