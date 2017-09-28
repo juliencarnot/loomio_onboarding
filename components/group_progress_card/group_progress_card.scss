@@ -20,11 +20,10 @@
 }
 
 .group-progress-card__list-item {
-  @include displayFlex;
+  display: flex;
   line-height: 32px;
   align-items: center;
   cursor: pointer;
-  -webkit-align-items: center;
 }
 
 .group-progress-card__complete i {
