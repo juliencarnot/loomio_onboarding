@@ -1,4 +1,4 @@
-angular.module('loomioApp').directive 'groupProgressCard', ($translate, Session, Records, IntercomService, ModalService, GroupModal, CoverPhotoForm, LogoPhotoForm, InvitationModal, DiscussionForm, PollCommonStartModal) ->
+angular.module('loomioApp').directive 'groupProgressCard', ($translate, Session, Records, IntercomService, ModalService, GroupModal, CoverPhotoForm, LogoPhotoForm, InvitationModal, DiscussionModal, PollCommonStartModal) ->
   scope: { group: '=?', discussion: '=?' }
   restrict: 'E'
   templateUrl: 'generated/components/group_progress_card/group_progress_card.html'
@@ -31,7 +31,7 @@ angular.module('loomioApp').directive 'groupProgressCard', ($translate, Session,
     ,
       translate: "start_thread"
       complete:  -> $scope.group.discussionsCount > 2
-      click:     -> ModalService.open DiscussionForm, discussion: -> Records.discussions.build(groupId: $scope.group.id)
+      click:     -> ModalService.open DiscussionModal, discussion: -> Records.discussions.build(groupId: $scope.group.id)
     ,
       translate: "make_decision"
       complete:  -> $scope.group.pollsCount > 1
