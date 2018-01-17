@@ -3,7 +3,7 @@ fr:
     group_progress_card:
       title: Activez votre groupe
       activities:
-        set_description: Indiquez une description pour votre groupe
+        set_description: Saisissez une description pour votre groupe
         set_logo: Choisissez un logo pour votre groupe
         set_cover_photo: Choisissez une bannière photo pour votre groupe
         invite_people_in: Invitez des personnes
@@ -17,8 +17,8 @@ fr:
       title: Configurez votre profil
       activities:
         enter_name: Entrez votre nom
-        set_profile_picture: Mettez une photo de profil
-        set_bio: Entrez une brève introduction
+        set_profile_picture: Ajoutez une photo de profil
+        set_bio: Saisissez une brève introduction
         join_group: Rejoignez un groupe
         make_decision: Votez pour une décision
       celebration_message: Votre profil est prêt !
